@@ -1,0 +1,20 @@
+﻿<Window x:Class="Tag16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tag16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Entschlüsseln" HorizontalAlignment="Left" Margin="10,10,0,10" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="40" Click="Decode_Click" />
+        <Button Content="Verschlüsseln" HorizontalAlignment="Left" Margin="200,10,0,10" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="40" Click="Encode_Click"  />
+        <TextBox x:Name="CiphertextTxt" Grid.Row="0" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" Text="FQMEARYBZEQRVGQY" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Visible" AcceptsReturn="True"/>
+        <TextBox x:Name="PlaintextTxt" Grid.Row="2" HorizontalAlignment="Stretch" Margin="10" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Visible" AcceptsReturn="True"/>
+    </Grid>
+</Window>
